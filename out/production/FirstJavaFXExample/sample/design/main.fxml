@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootAnchor" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: fafafa;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.mainController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="100.0" prefWidth="700.0" style="-fx-background-color: #460ba3#460ba3;">
+         <children>
+            <Text fill="WHITE" layoutX="253.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test APP" wrappingWidth="193.21875">
+               <font>
+                  <Font name="Lobster" size="53.0" />
+               </font>
+            </Text>
+            <Button fx:id="regbutton" layoutX="587.0" layoutY="34.0" mnemonicParsing="false" onAction="#clickRegistrationButton" style="-fx-background-color: #ed8805#ed8805;" text="Registration" textFill="WHITE">
+               <font>
+                  <Font name="Lobster" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="loginField" layoutX="235.0" layoutY="168.0" prefHeight="32.0" prefWidth="232.0" promptText="Login" style="-fx-border-color: silver; -fx-background-color: fafafa;">
+         <font>
+            <Font name="AdobeDevanagari-Regular" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="signinButton" layoutX="291.0" layoutY="283.0" mnemonicParsing="false" onAction="#clickSignInButton" prefHeight="42.0" prefWidth="117.0" style="-fx-background-color: #460ba3#460ba3 #460ba3#460ba3;" text="Sign in" textFill="WHITE">
+         <font>
+            <Font name="Lobster" size="22.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <PasswordField fx:id="passwordField" layoutX="234.0" layoutY="228.0" prefHeight="32.0" prefWidth="232.0" promptText="Password" style="-fx-background-color: fafafa; -fx-border-color: silver;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Text layoutX="246.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Authentication">
+         <font>
+            <Font name="Lobster" size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
